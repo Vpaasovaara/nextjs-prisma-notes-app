@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./styles/globals.css --watch",
+    "studio": "npx prisma studio"
   },
   "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "autoprefixer": "^10.4.4",
     "next": "12.1.4",
+    "postcss": "^8.4.12",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
@@ -19,6 +24,8 @@
     "@types/react-dom": "18.0.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4",
+    "prisma": "^3.12.0",
+    "tailwindcss": "^3.0.23",
     "typescript": "4.6.3"
   }
 }
